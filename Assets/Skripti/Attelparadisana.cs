@@ -20,7 +20,21 @@ public class Attelparadisana : MonoBehaviour{
   public GameObject josta;
   public GameObject parsejs;
   public GameObject mainigaisAttels;
+  public GameObject slaideris1;
+  public GameObject slaideris2;
   public Sprite[] atteluMasivs;
+  
+  
+
+
+
+public void mainitIzmeru(){
+    float pasreizejaVertiba = slaideris1.GetComponent<Slider>().value;
+    float pasreizejaVertiba1 = slaideris2.GetComponent<Slider>().value;
+    mainigaisAttels.transform.localScale = new Vector3(1F*pasreizejaVertiba1, 1F*pasreizejaVertiba, 1);
+    mainigaisAttels.transform.localScale = new Vector3(1F*pasreizejaVertiba1, 1F*pasreizejaVertiba,1);
+}
+
 
   public void krekluAttelosana(bool vertiba){
       jurniekaKrekls.SetActive(vertiba);
